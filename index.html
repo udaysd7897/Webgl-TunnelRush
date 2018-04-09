@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL Demo</title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+  <style >
+    #score
+    {
+      border: 4px solid black;
+      padding: 30px;
+      color: #2CB3C9;
+        position: absolute;
+        top: /*somewhere*/;
+        left: /*somewhere*/;
+        z-index: 100;
+    }
+    #level
+    {
+      border: 4px solid black;
+      padding: 30px;
+      color: #2CB3C9;
+        position: absolute;
+          top: 10px;
+        right: 0px;
+        z-index: 100;
+
+
+    }
+
+  </style>
+  </head>
+
+  <body>
+    
+    <div id= "score"></div> 
+    <div id= "level"></div>
+
+
+
+  <audio autoplay loop="true">
+  	<source src="Animals.mp3" type="audio/mpeg">
+  </audio>
+    <canvas id="glcanvas" width="640" height="480"></canvas>
+  </body>
+
+  <script src="./gl-matrix.js"></script>
+  <script src="obstacle.js"></script>
+  <script src="webgl-demo.js"></script>
+</html>
